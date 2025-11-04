@@ -1,8 +1,13 @@
 package model.polimorfism;
 
 public class Square implements Shape {
+    private double kenar;
+
+    public Square(double kenar) {
+        this.kenar = kenar;
+    }
     @Override
     public double areaCalculate() {
-        return 1;
+        return kenar * kenar;
     }
 }
