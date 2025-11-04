@@ -1,16 +1,16 @@
-import java.util.Scanner;
+import model.constructor.Car;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Kullanici adı:");
-        String username = scanner.nextLine();
-        System.out.println("Parola:");
-        String password = scanner.nextLine();
-        if ("admin".equalsIgnoreCase(username) && "1234".equals(password)) {
-            System.out.println("Giriş başarılı!");
-        } else {
-            System.out.println("Hatalı giriş!");
-        }
+        String city1;
+        city1 = "serap";
+        System.out.println(city1);
+        city1 = "San Francisco";
+        System.out.println(city1);
+        Car car = new Car();
+        Car car2 = new Car(1, "bmw", "red", 2024);
+        Car car3 = new Car(1, "bmw", "red");
+        Car car4 = new Car();
+        car2.setModel("mercedes");
     }
 }
